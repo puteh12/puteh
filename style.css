@@ -1,0 +1,83 @@
+/* Premium animated gradient background */
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(270deg, #ffafbd, #ffc3a0, #2193b0, #6dd5ed);
+  background-size: 800% 800%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: #fff;
+  animation: gradientShift 20s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 45px 40px;
+  border-radius: 25px;
+  text-align: center;
+  max-width: 480px;
+  box-shadow: 0 0 60px rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.birthday-video {
+  width: 210px;
+  border-radius: 30px;
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.75);
+  margin-bottom: 28px;
+  object-fit: cover; /* supaya video cover frame cantik */
+}
+
+/* Animasi teks fade + slide from bottom */
+.fade-slide-in {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeSlideIn 1s forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button styles */
+.btn {
+  background: #ff4081;
+  border: none;
+  padding: 20px 50px;
+  font-size: 1.3rem;
+  border-radius: 60px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 25px #ff4081cc;
+  transition: all 0.3s ease;
+  user-select: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #e91e63;
+  box-shadow: 0 0 50px #e91e63ee;
+  transform: scale(1.07);
+}
