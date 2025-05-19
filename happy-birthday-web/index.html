@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🎉 Happy Birthday! 🎉</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Video instead of gif -->
+    <video class="birthday-video" autoplay muted loop playsinline>
+      <source src="happy-birthday.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <h1 class="fade-slide-in">🎉 Happy Birthday, Shahira Said! 🎉</h1>
+    <p class="fade-slide-in delay-1">
+      On your special day, may your heart be filled with happiness, your life with love, and your days with endless joy. Wishing you a day filled with love, laughter, and magical moments that sparkle like stars! ✨🎂 Here's to more wonderful memories and sweet moments 🤍🤍🤍!
+    </p>
+    <button onclick="playConfetti()" class="btn">Celebrate! 🎉</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
